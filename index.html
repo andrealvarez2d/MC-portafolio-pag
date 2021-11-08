@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfoca Studio</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="shortcut icon" href="/img/camera.png">
+  </head>
+
+  <body>
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            M.AutoInit();
+        })
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+            indicators: true
+        });
+        });
+
+    </script>
+
+    <!--Menu-->
+    <div class="navbar-fixed">
+      <nav class="deep-purple lighten-2">
+            <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Enfoca Studio</a>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+            </a>
+    
+            <ul class="left  hide-on-med-and-down">
+              <li><a href="#sobremi">Sobre Mi</a></li>
+              <li><a href="#clientes">Con quienes he trabajado</a></li>
+              <li><a href="#portafolio">Portafolio</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+        <ul class="sidenav" id="menu-responsive">
+          <li><a href="#sobremi">Sobre Mi</a></li>
+          <li><a href="#clientes">Con quienes he trabajado</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        
+    <!--Banner-->
+    <div class="row">
+        <div class="col 12">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/woman-photographing-from-moving-car.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sobre mit-->
+      <div id="sobremi" class="container section">
+          <div class="row">
+            <div class="col">
+                <h2 class="header deep-purple-text darken-4">Sobre Mi</h2>
+                <div class="card z-depth-5">
+                  <div class="card-image col s10 m4">
+                    <img class="responsive-img" src="/img/beautiful-blonde-woman-using-vintage-camera.jpg">
+                  </div>
+                  <div class="card-stacked col s12 m8">
+                    <div class="card-content">
+                      <h3>Amelia Velasquez</h3>
+                      <h5>Fotografa con 10 años de experiencia</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima error aut iusto quam. Odio, pariatur cum sit architecto odit a aspernatur culpa quam accusamus libero, neque eos magnam distinctio nesciunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <!--Clientes-->
+      <div id="clientes" class="container section">
+        <h2 class="header deep-purple-text darken-4">Con quienes he trabajado</h2>
+        <div class="row">
+        <div class="card col m4 s12">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/Time_Magazine_logo.jpg">
+          </div>
+          <div class="card-content">
+            <p><a href="https://time.com" class="deep-purple-text darken-4" target="_blank">LINK</a></p>
+          </div>
+        </div>
+        <div class="card col m4 s12">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/VOGUE_LOGO.jpg">
+          </div>
+          <div class="card-content">
+            <p><a href="https://www.vogue.es" class="deep-purple-text darken-4" target="_blank">LINK</a></p>
+          </div>
+        </div>
+        <div class="card col m4 s12">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/Harper's_Bazaar_color_logo.jpg">
+          </div>
+          <div class="card-content">
+            <p><a href="https://www.harpersbazaar.com/es/" class="deep-purple-text darken-4" target="_blank">LINK</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!--Portafolio-->
+      <div id="portafolio" class="container section">
+        <h2 class="header deep-purple-text darken-4">Portafolio</h2>
+        <div class="carousel carousel-slider">
+          <a class="carousel-item" href=""><img src="img/pink-haired-woman-looks-thoughtfully-isolated-wall.jpg"></a>
+          <a class="carousel-item" href=""><img src="img/african-american-student-walking-street.jpg"></a>
+          <a class="carousel-item" href=""><img src="img/amazing-blonde-woman-trendy-summer-outfit-posing-outdoors.jpg"></a>
+          <a class="carousel-item" href=""><img src="img/picture-lady-orange-trousers-with-high-waist-white-top-with-floral-print.jpg"></a>
+          <a class="carousel-item" href=""><img src="img/high-fashion-look-glamor-portrait-beautiful-sexy-stylish-caucasian-young-woman-model-black-cloth.jpg"></a>
+        </div>
+      </div>
+
+      <!--Contactos-->
+      <div id="contacto" class="container section">
+        <h2 class="header deep-purple-text darken-4">Contacto</h2>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Nombre</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Apellido</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telefono</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Mensaje</label>
+              </div>
+            </div>
+            <a class="waves-effect waves-light btn deep-purple lighten-2">Enviar</a>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
